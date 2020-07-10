@@ -36,6 +36,7 @@ feature 'Login Page: Invalid Credentials Display Alert to User' do
   scenario 'tjmaher / wrong_password: Your username is invalid!' do
     error_message = 'Your username is invalid!'
     fill_in('Username', with: 'tjmaher')
+    text = find_field('Username')
     fill_in('Password', with: 'wrong_password')
     click_button('Login')
     expect(page).to have_content(error_message) #Is message on page?

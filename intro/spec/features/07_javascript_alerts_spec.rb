@@ -48,4 +48,12 @@ feature 'JavaScript Alerts: Interacting with Modals' do
     expect(message).to eq('I am a JS Confirm')
     expect(page).to have_content('You clicked: Ok')
   end
+
+  scenario 'JS Promt: Accept Alert, Type [Hello] => Message: You entered: Hello' do
+    message = accept_prompt(with: 'Hello') do
+      click_button('Click for JS Prompt')
+    end
+    expect(message).to eq('I am a JS prompt')
+    expect(page).to have_content('You entered: Hello')
+  end
 end

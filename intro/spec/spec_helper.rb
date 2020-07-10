@@ -19,6 +19,8 @@ Capybara.default_max_wait_time = 10
 # Run using:
 # bundle exec rspec spec/features/login.rb --format documentation
 # ... Or...
+# Set the save directory.
+Capybara.save_path = 'tmp/capybara'
 
 RSpec.configure do |config|
   config.formatter = :documentation
