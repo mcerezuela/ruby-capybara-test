@@ -56,3 +56,5 @@ build-iPhoneSimulator/
 # .rubocop-https?--*
 .idea/
 intro/tmp/
+*.lock
+01_debugging_with_save_and_open/tmp/
