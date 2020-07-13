@@ -58,3 +58,4 @@ build-iPhoneSimulator/
 intro/tmp/
 *.lock
 01_debugging_with_save_and_open/tmp/
+*.DS_Store
